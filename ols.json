@@ -1,0 +1,26 @@
+{
+    "$schema": "https://raw.githubusercontent.com/DanielGavin/ols/master/misc/ols.schema.json",
+    "collections": [
+        {
+            "name": "core",
+            "path": "/home/oem/Development/Odin/core"
+        },
+        {
+            "name": "shared",
+            "path": "/home/oem/Projects/Odin/8086-sim/src"
+        },
+        {
+            "name": "vendor",
+            "path": "/home/oem/Development/Odin/vendor"
+        }
+    ],
+    "profile": "linux_profile",
+    "profiles": [
+        { "name": "linux_profile", "os": "linux", "checker_path": ["src/main.odin"]},
+        { "name": "windows_profile", "os": "windows", "checker_path": ["src"]}
+    ],
+    "enable_document_symbols": true,
+    "enable_semantic_tokens": true,
+    "enable_hover": true,
+    "enable_snippets": true
+}
